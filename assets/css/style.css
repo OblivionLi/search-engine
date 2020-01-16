@@ -1,0 +1,270 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.wrapper .index-page {
+    justify-content: center;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.main-section .search-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.main-section .search-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container .search-button {
+    color: #757575;
+    background-color: #f5f5f5;
+    border: none;
+    height: 36px;
+    width: 125px;
+    border-radius: 1px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-container .search-box {
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    height: 44px;
+    border-radius: 2px;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 70%;
+    max-width: 630px;
+    color: #000;
+}
+
+.main-section .logo-container {
+    width: 240px;
+    text-align: center;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.header {
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.wrapper .header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-container .logo-container {
+    width: 150px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.header-container .search-container {
+    flex: 1;
+}
+
+.header-container .search-container form {
+    margin: 15px 0 28px 0;
+}
+
+.header-container .search-bar-container {
+    height: 44px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    width: 70%;
+    max-width: 630px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.header-container .search-bar-container .search-boxx {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    padding: 12px;
+    font-size: 16px;
+    color: #000;
+}
+
+.header-container .search-bar-container .search-button {
+    background-color: #fff;
+    height: 44px;
+    margin-top: 0;
+    width: 44px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-container .search-bar-container .search-button img {
+    width: 22px;
+}
+
+.tabs-container {
+    margin-left: 150px;
+}
+
+.tabs-container .tab-list {
+    padding: 0;
+    margin: 0;
+}
+
+.tabs-container .tab-list li {
+    display: inline-block;
+    padding: 0 16px 12px 16px;
+    color: #777;
+    font-size: 13px;
+}
+
+.tabs-container .tab-list li a {
+    text-decoration: none;
+}
+
+.tabs-container .tab-list li.active {
+    border-bottom: 3px solid #1A73E8;
+}
+
+.tabs-container .tab-list li.active a {
+    font-weight: bold;
+    color: #1A73E8;
+}
+
+.main-result-section {
+    flex: 1;
+}
+
+.main-result-section .result-count {
+    font-size: 13px;
+    color: #808080;
+    margin-left: 150px;
+}
+
+.main-result-section .site-results {
+    margin-left: 150px;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+}
+
+.result-container .title {
+    margin: 0;
+}
+
+.result-container .title a {
+    color: #1a0dab;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.result-container .title a:hover {
+    text-decoration: underline;
+}
+
+.result-container .url {
+    color: #006621;
+    font-size: 14px;
+}
+
+.result-container .description {
+    font-size: 14px;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.page-buttons {
+    display: flex;
+}
+
+.page-number-container img {
+    height: 37px;
+}
+
+.page-number-container, .page-number-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.page-number {
+    color: #000;
+    font-size: 13px;
+}
+
+a .page-number {
+    color: #4285f4;
+}
+
+.main-result-section .image-results {
+    margin: 20px;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.grid-item img {
+    max-width: 300px;
+    min-width: 50px;
+    visibility: hidden;
+}
+
+.grid-item .details {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 11px;
+    padding: 3px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.grid-item:hover .details {
+    visibility: visible;
+}
+
+
+
+
