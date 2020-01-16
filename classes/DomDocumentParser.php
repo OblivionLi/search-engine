@@ -7,12 +7,13 @@ class DomDocumentParser
 
     public function __construct($url)
     {
-        $options = array('http' => array('method' => 'GET', 'header' => 'User-Agent: loodleBot/0.1\n'));
-
+        $options = array(
+            'http' => array('method' => "GET", 'header' => "User-Agent: loodleBot/0.1\n")
+        );
         $context = stream_context_create($options);
 
-        $this->doc = new DOMDocument();
-        $this->doc->loadHTML(file_get_contents($url, false, $context));
+        $this->doc = new DomDocument();
+        @$this->doc->loadHTML(file_get_contents($url, false, $context));
     }
 
     public function getLinks()
@@ -20,7 +21,7 @@ class DomDocumentParser
         return $this->doc->getElementsByTagName('a');
     }
 
-    public function getTitle()
+    public function getTitleTags()
     {
         return $this->doc->getElementsByTagName('title');
     }
