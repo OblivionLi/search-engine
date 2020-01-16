@@ -67,7 +67,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
 
             if ($type == 'sites') {
                 $resultProvider = new SiteResultProvider($db);
-                $pageLimit = 3;
+                $pageLimit = 20;
             } else {
                 $resultProvider = new ImageResultProvider($db);
                 $pageLimit = 30;
@@ -101,7 +101,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
                 }
 
                 if ($currentPage + $pageLeft > $numPages + 1) {
-                    $currentPage = $numPages - $pageLimit;
+                    $currentPage = $numPages + 1 - $pageLeft;
                 }
 
                 while ($pageLeft != 0 && $currentPage <= $numPages) {
