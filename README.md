@@ -9,9 +9,6 @@ google like search engine, including sites and images
 
 Video Presentation:
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/watch?v=OIrhmO8LSVE" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+ [![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/OIrhmO8LSVE/mq2.jpg?sqp=CLWitvEF&rs=AOn4CLA1xVK6gsTnrWNKWZ9Lb3yFCb_p8A)](https://www.youtube.com/watch?v=OIrhmO8LSVE)
+
 
