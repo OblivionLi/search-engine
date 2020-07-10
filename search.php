@@ -24,7 +24,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Welcome to Loodle</title>
 
-        <link rel="stylesheet" href="/php-search/assets/css/style.css" type="text/css">
+        <link rel="stylesheet" href="/search-engine/assets/css/style.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     </head>
@@ -34,7 +34,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
             <div class="header-container">
                 <div class="logo-container">
                     <a href="index.php">
-                        <img src="/php-search/assets/logo/logo.png" alt="Site Logo">
+                        <img src="/search-engine/assets/logo/logo.png" alt="Site Logo">
                     </a>
                 </div>
 
@@ -45,7 +45,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
 
                             <input type="text" class="search-boxx" name="term" value="<?php echo $term; ?>">
                             <button class="search-button">
-                                <img src="/php-search/assets/logo/search-icon.png">
+                                <img src="/search-engine/assets/logo/search-icon.png">
                             </button>
                         </div>
                     </form>
@@ -85,7 +85,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
         <div class="pagination-container">
             <div class="page-buttons">
                 <div class="page-number-container">
-                    <img src="/php-search/assets/logo/page-start.png">
+                    <img src="/search-engine/assets/logo/page-start.png">
                 </div>
 
                 <?php
@@ -106,12 +106,12 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
 
                 while ($pageLeft != 0 && $currentPage <= $numPages) {
                     if ($currentPage == $page) {
-                        echo "<div class=\"page-number-container\"><img src=\"/php-search/assets/logo/page-selected.png\"><span class=\"page-number\">$currentPage</span></div>";
+                        echo "<div class=\"page-number-container\"><img src=\"/search-engine/assets/logo/page-selected.png\"><span class=\"page-number\">$currentPage</span></div>";
 
                         $currentPage++;
                         $pageLeft--;
                     } else {
-                        echo "<div class=\"page-number-container\"><a href=\"search.php?term=$term&type=$type&page=$currentPage\"><img src=\"/php-search/assets/logo/page.png\"><span class=\"page-number\">$currentPage</span></a></div>";
+                        echo "<div class=\"page-number-container\"><a href=\"search.php?term=$term&type=$type&page=$currentPage\"><img src=\"/search-engine/assets/logo/page.png\"><span class=\"page-number\">$currentPage</span></a></div>";
 
                         $currentPage++;
                         $pageLeft--;
@@ -119,7 +119,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
                 } ?>
 
                 <div class="page-number-container">
-                    <img src="/php-search/assets/logo/page-end.png">
+                    <img src="/search-engine/assets/logo/page-end.png">
                 </div>
             </div>
         </div>
