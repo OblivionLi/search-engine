@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Loodle</title>
 
-    <link rel="stylesheet" href="/php-search/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/search-engine/assets/css/style.css" type="text/css">
 </head>
 <body>
 <div class="wrapper index-page">
     <div class="main-section">
         <div class="logo-container">
-            <img src="/php-search/assets/logo/logo.png" alt="Site Logo">
+            <img src="/search-engine/assets/logo/logo.png" alt="Site Logo">
         </div>
 
         <div class="search-container">
